@@ -15,7 +15,7 @@
 
 <p>
 	<button class="btn">
-	<a href="/user-registration"> Return Home</a></button>
+	<a href="/"> Return Home</a></button>
 	</p>
 
 </body>
