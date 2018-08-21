@@ -13,6 +13,10 @@
 <h>Thank You,</h>
 <p> ${ user.firstname} ${user.lastname} you are now registered with The Coffee Shop!</p>
 
-<a href="/"> Return Home</a>
+<p>
+	<button class="btn">
+	<a href="/user-registration"> Return Home</a></button>
+	</p>
+
 </body>
 </html>
