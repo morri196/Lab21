@@ -17,7 +17,9 @@ public class Lab21Controller {
 	}
 	
 	@RequestMapping("/user-registration")
-	public ModelAndView showregistration() {
+	public ModelAndView showregistration(
+			
+			) {
 		ModelAndView mav = new ModelAndView("registration");
 		
 		return mav;
@@ -30,12 +32,20 @@ public class Lab21Controller {
 			@RequestParam ("email") String email, 
 			@RequestParam ("phonenumber") String phonenumber,
 			@RequestParam ("password") String password
-			) { ModelAndView mav = new ModelAndView("summary");
-		mav.addObject("firstname", firstname);
-		mav.addObject("lastname", lastname);
-		mav.addObject("email", email);
-		mav.addObject("phonenumber", phonenumber);
-		mav.addObject("password", password);
-		return mav;
+			) {
+		
+			User user = new User();
+			user.setFirstname(firstname);
+			user.setLastname(lastname);
+			user.setEmail(email);
+			user.setPhonenumber(phonenumber);
+			user.setPassword(password);
+			ModelAndView mav = new ModelAndView("summary");	
+			mav.addObject("user", user);
+//			mav.addObject("lastname", lastname);
+//			mav.addObject("email", email);
+//			mav.addObject("phonenumber", phonenumber);
+//			mav.addObject("password", password);
+			return mav;
 	}
 }
