@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,6 +12,7 @@
 
 <h>Thank You,</h>
 <p> ${ user.firstname} ${user.lastname} you are now registered with The Coffee Shop!</p>
+
 
 <p>
 	<button class="btn">

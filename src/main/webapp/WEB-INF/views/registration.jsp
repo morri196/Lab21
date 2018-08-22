@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <link rel="stylesheet" href="/style.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>coffee shop registration page</title>
@@ -12,31 +11,23 @@
 <main class= container>
 <form action="/summary-page" method="post"> <!-- GET/POST: Get is default. Post will clear out the URL -->
 <p>
-    <img src = "monkey.png"
-         alt = "Picture of a happy monkey" />
-  </p>
-<p>
-
-First Name:<input name="firstname" required minlength="2"maxlength="16"/><!-- max & min length will set requirements on user input -->
+First Name:<input type="text" name="firstname" required minlength="2"maxlength="16"/><!-- max & min length will set requirements on user input -->
 </p>
-
 <p>
-Last Name:<input name="lastname"required minlength="2"maxlength="16">
+Last Name:<input type ="text" name="lastname"required minlength="2"maxlength="16">
 </p>
 <p>
 email:<input type= "email" name="email">
 </p>
 <p>
-Phone Number:<input name="phonenumber" type=/>
+Phone Number:<input name="phonenumber" type="tel"/>
 </p>
-
 <p>
 Password (First letter must be capitalized(can contain numbers)):<input name="password"type="password" required pattern="[A-Z][a-z0-9]*" >
 </p>
 <p>
 Re-Enter Password (First letter must be capitalized(can contain numbers)):<input name="password2"type="password" required pattern="[A-Z][a-z0-9]*" >
 </p>
-
 <p>
              <label>How often do you drink coffee per week?</label>
              <select id = "myList">
@@ -46,11 +37,9 @@ Re-Enter Password (First letter must be capitalized(can contain numbers)):<input
                <option value = "4">6+ cups</option>
              </select>
           </p>
-
 <p>
-<button>Submit</button>
-</p>
-
+	<button type="submit" class="btn btn-primary">Submit</button>
+	</p>
 </form>
 </body>
 </html>
