@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import co.grandcircus.Lab21.dao.ItemsDao;
+import co.grandcircus.Lab21.dao.ItemsAdminDao;
 import co.grandcircus.Lab21.dao.UsersDao;
 import co.grandcircus.Lab21.entity.Users;
 
@@ -14,7 +14,7 @@ import co.grandcircus.Lab21.entity.Users;
 public class Lab21Controller {
 	
 	@Autowired
-	ItemsDao itemsDao;
+	ItemsAdminDao itemsDao;
 	@Autowired
 	UsersDao usersDao;
 

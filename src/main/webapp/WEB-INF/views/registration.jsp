@@ -1,10 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
-<html>
+<htmllang="en">
 <head>
 <link rel="stylesheet" href="/style.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <title>coffee shop registration page</title>
 </head>
 <body>
@@ -37,7 +42,7 @@ Re-Enter Password (First letter must be capitalized(can contain numbers)):<input
                <option value = "4">6+ cups</option>
              </select>
           </p>
-<p>
+	<p>
 	<button type="submit" class="btn btn-primary">Submit</button>
 	</p>
 </form>
